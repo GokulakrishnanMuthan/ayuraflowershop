@@ -1,0 +1,118 @@
+.order {
+    background-color: var(--bg-soft);
+}
+
+.order-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: white;
+    border-radius: var(--border-radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+
+.order-info {
+    flex: 1;
+    padding: 40px;
+    background-color: var(--primary-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.order-desc {
+    font-size: 1.05rem;
+    color: var(--text-dark);
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.order-benefits {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.order-benefits li {
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.order-form-container {
+    flex: 1.5;
+    padding: 40px;
+}
+
+.order-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group.row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group.row>* {
+    flex: 1;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-label {
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: var(--text-dark);
+}
+
+.order-form input,
+.order-form select,
+.order-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius-sm);
+    font-family: var(--font-family);
+    font-size: 1rem;
+    transition: var(--transition);
+    background-color: var(--bg-soft);
+}
+
+.order-form input:focus,
+.order-form select:focus,
+.order-form textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(233, 30, 99, 0.1);
+}
+
+.order-submit-btn {
+    width: 100%;
+    padding: 16px;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+@media (min-width: 992px) {
+    .order-wrapper {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-group.row {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

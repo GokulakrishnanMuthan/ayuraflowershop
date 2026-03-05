@@ -1,0 +1,147 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    padding: 20px 0;
+    z-index: 1000;
+    transition: var(--transition);
+}
+
+.header.scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+    box-shadow: var(--shadow-sm);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.logo span {
+    color: var(--primary);
+    font-weight: 400;
+}
+
+.desktop-nav {
+    display: none;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-link {
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: var(--text-dark);
+}
+
+.nav-link:hover {
+    color: var(--primary);
+}
+
+/* Updated styling: Set background for non-scrolled header text to white so it's visible on dark hero */
+.header:not(.scrolled) .nav-link,
+.header:not(.scrolled) .logo {
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    /* added for visibility if image is light */
+}
+
+.header:not(.scrolled) .logo span {
+    color: var(--primary-light);
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.whatsapp-btn {
+    display: none;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+}
+
+.whatsapp-btn span {
+    display: none;
+}
+
+.mobile-menu-toggle {
+    background: none;
+    font-size: 1.5rem;
+    color: var(--text-dark);
+}
+
+.header:not(.scrolled) .mobile-menu-toggle {
+    color: white;
+}
+
+.mobile-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: var(--shadow-md);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: clip-path 0.3s ease-in-out;
+}
+
+.mobile-nav.open {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.mobile-nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.mobile-nav-link {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--bg-soft);
+}
+
+@media (min-width: 992px) {
+    .desktop-nav {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    .whatsapp-btn {
+        display: flex;
+    }
+
+    .whatsapp-btn span {
+        display: inline;
+    }
+}

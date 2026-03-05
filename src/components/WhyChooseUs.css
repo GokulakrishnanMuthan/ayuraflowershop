@@ -1,0 +1,72 @@
+.why-choose-us {
+    background-color: white;
+}
+
+.wcu-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.wcu-text {
+    max-width: 600px;
+}
+
+.wcu-description {
+    font-size: 1.05rem;
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+.wcu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.wcu-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px;
+    background-color: var(--bg-soft);
+    border-radius: var(--border-radius-md);
+    transition: var(--transition);
+}
+
+.wcu-item:hover {
+    background-color: var(--primary-light);
+    transform: translateX(10px);
+}
+
+.wcu-icon {
+    font-size: 2rem;
+    color: var(--primary);
+    flex-shrink: 0;
+}
+
+.wcu-title {
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    margin-bottom: 5px;
+}
+
+.wcu-desc {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 0;
+}
+
+@media (min-width: 992px) {
+    .wcu-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .wcu-grid {
+        grid-template-columns: repeat(2, 1fr);
+        flex: 1;
+        margin-left: 50px;
+    }
+}
