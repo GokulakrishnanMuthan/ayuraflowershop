@@ -1,0 +1,32 @@
+.bokeh-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 1; /* Before content */
+}
+
+.bokeh-circle {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(40px);
+    opacity: 0.5;
+    animation: float 15s infinite ease-in-out alternate;
+}
+
+/* Pastel colors for the circles */
+.bokeh-circle:nth-child(1) { width: 300px; height: 300px; background: rgba(255, 183, 178, 0.4); top: -10%; left: -10%; animation-duration: 20s; }
+.bokeh-circle:nth-child(2) { width: 400px; height: 400px; background: rgba(226, 240, 203, 0.3); top: 40%; right: -20%; animation-duration: 25s; }
+.bokeh-circle:nth-child(3) { width: 250px; height: 250px; background: rgba(255, 218, 193, 0.4); bottom: -10%; left: 30%; animation-duration: 22s; }
+.bokeh-circle:nth-child(4) { width: 350px; height: 350px; background: rgba(181, 234, 215, 0.3); top: 20%; left: 50%; animation-duration: 18s; }
+.bokeh-circle:nth-child(5) { width: 200px; height: 200px; background: rgba(199, 206, 234, 0.4); bottom: 20%; right: 10%; animation-duration: 24s; }
+.bokeh-circle:nth-child(6) { width: 450px; height: 450px; background: rgba(255, 183, 178, 0.2); top: 60%; left: -15%; animation-duration: 28s; }
+
+@keyframes float {
+    0% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(30px, -50px) scale(1.1); }
+    100% { transform: translate(-20px, 30px) scale(0.9); }
+}

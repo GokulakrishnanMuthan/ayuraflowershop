@@ -1,13 +1,20 @@
 import React from 'react';
 import './Gallery.css';
 
+import weddingImg from '../assets/gallery/wedding.jpg';
+import templeImg from '../assets/gallery/temple.jpg';
+import bulkImg from '../assets/gallery/bulk.jpg';
+import festoonImg from '../assets/gallery/festoon.jpg';
+import flowerBouquetImg from '../assets/gallery/FlowerBouquet.jpg';
+import eventImg from '../assets/gallery/event.jpg';
+
 const galleryImages = [
-    { id: 1, type: 'wedding', src: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80' },
-    { id: 2, type: 'temple', src: 'https://images.unsplash.com/photo-1601314167099-232775b3d6fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80' },
-    { id: 3, type: 'bulk', src: 'https://images.unsplash.com/photo-1549444747-d5d83660afdc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80' },
-    { id: 4, type: 'festoon', src: 'https://images.unsplash.com/photo-1634502597793-1b942baebd57?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80' },
-    { id: 5, type: 'wedding', src: 'https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80' },
-    { id: 6, type: 'bulk', src: 'https://images.unsplash.com/photo-1546255146-59b40c6c7ac0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80' },
+    { id: 1, type: 'wedding', src: weddingImg },
+    { id: 2, type: 'temple', src: templeImg },
+    { id: 3, type: 'bulk', src: bulkImg },
+    { id: 4, type: 'festoon', src: festoonImg },
+    { id: 5, type: 'FlowerBouquet', src: flowerBouquetImg },
+    { id: 6, type: 'event', src: eventImg },
 ];
 
 const Gallery = () => {
@@ -19,10 +26,10 @@ const Gallery = () => {
                     <p className="section-subtitle">Gallery</p>
                 </div>
 
-                <div className="masonry-grid mt-5">
+                <div className="gallery-grid">
                     {galleryImages.map((img, index) => (
                         <div
-                            className="masonry-item fade-in"
+                            className="gallery-item fade-in"
                             key={img.id}
                             style={{ animationDelay: `${index * 0.1}s` }}
                         >

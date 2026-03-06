@@ -1,5 +1,12 @@
 .products {
     background-color: var(--bg-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.products-container {
+    position: relative;
+    z-index: 2;
 }
 
 .products-grid {
@@ -12,9 +19,11 @@
     background-color: white;
     border-radius: var(--border-radius-xl);
     overflow: hidden;
-    box-shadow: var(--shadow-sm);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    /* Added prominent shadow */
     transition: var(--transition);
     border: 1px solid var(--bg-soft);
+    cursor: pointer;
 }
 
 .product-card:hover {

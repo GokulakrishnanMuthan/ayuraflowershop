@@ -1,23 +1,20 @@
 import React from 'react';
 import './Footer.css';
-import { FaInstagram, FaFacebookF } from 'react-icons/fa';
+import { FaYoutube } from 'react-icons/fa';
 
 const Footer = () => {
     return (
-        <footer className="footer bg-soft">
+        <footer className="footer bg-soft mt-2">
             <div className="container">
                 <div className="footer-content">
                     <div className="footer-brand">
-                        <h2 className="footer-logo">AYURA <span>Flower Shop</span></h2>
+                        <h2 className="footer-logo">AYURA <span>Floral Export</span></h2>
                         <p className="footer-desc">
                             Your trusted partner for wholesale, bulk, and event floral supplies. Delivering freshness and elegance daily.
                         </p>
                         <div className="social-links mt-5">
-                            <a href="#" className="social-btn" aria-label="Instagram">
-                                <FaInstagram />
-                            </a>
-                            <a href="#" className="social-btn" aria-label="Facebook">
-                                <FaFacebookF />
+                            <a href="https://youtube.com/@ayurafloral?si=NRL9BPzrODGW2Z_W" className="social-btn" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                                <FaYoutube size={32} />
                             </a>
                         </div>
                     </div>
@@ -44,7 +41,7 @@ const Footer = () => {
                 </div>
 
                 <div className="footer-bottom">
-                    <p>&copy; {new Date().getFullYear()} Ayura Flower Shop. All rights reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} Ayura Floral Export. All rights reserved.</p>
                     <p className="credit">Designed for Wholesale Excellence.</p>
                 </div>
             </div>

@@ -23,7 +23,7 @@ const Contact = () => {
                                 <div className="contact-icon"><FaMapMarkerAlt /></div>
                                 <div>
                                     <h4>Address</h4>
-                                    <p>123 Flower Market Road, Wholesale District,<br />City Name, State, 123456</p>
+                                    <p>328 Sakthi Main Road, 2nd St, opposite Prozone mall,<br />Siranandha Puram, Coimbatore, Tamil Nadu 641035</p>
                                 </div>
                             </div>
 
@@ -31,8 +31,7 @@ const Contact = () => {
                                 <div className="contact-icon"><FaPhoneAlt /></div>
                                 <div>
                                     <h4>Phone</h4>
-                                    <p><a href="tel:+919876543210">+91 98765 43210</a></p>
-                                    <p><a href="tel:+919876543211">+91 98765 43211</a></p>
+                                    <p><a href="tel:+919994048950">+91 99940 48950</a></p>
                                 </div>
                             </div>
 
@@ -40,7 +39,7 @@ const Contact = () => {
                                 <div className="contact-icon"><FaClock /></div>
                                 <div>
                                     <h4>Business Hours</h4>
-                                    <p>Daily: 4:00 AM - 8:00 PM</p>
+                                    <p>24hr</p>
                                     <p className="highlight-text">Early morning pickups available for fresh arrivals.</p>
                                 </div>
                             </div>
@@ -49,13 +48,13 @@ const Contact = () => {
                                 <div className="contact-icon"><FaEnvelope /></div>
                                 <div>
                                     <h4>Email</h4>
-                                    <p><a href="mailto:orders@ayuraflowershop.com">orders@ayuraflowershop.com</a></p>
+                                    <p><a href="mailto:Ayurafloralexports@gmail.com">Ayurafloralexports@gmail.com</a></p>
                                 </div>
                             </div>
                         </div>
 
                         <a
-                            href="https://wa.me/919876543210"
+                            href="https://wa.me/919994048950"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="btn btn-secondary contact-wa-btn mt-5"
@@ -67,7 +66,7 @@ const Contact = () => {
                     <div className="contact-map">
                         {/* Embedded Google Map (Placeholder iframe) */}
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125322.44173111422!2d76.88483256087596!3d11.014261474271887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859af2f971cb5%3A0x2fc1c81e183ed282!2sCoimbatore%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1709626578036!5m2!1sen!2sin"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3727.121173425699!2d76.9955171!3d11.055741200000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859a13a03d0d5%3A0xd59f027193616f7b!2sAyura%20Floral%20Exports!5e1!3m2!1sen!2sin!4v1772771199024!5m2!1sen!2sin"
                             width="100%"
                             height="100%"
                             style={{ border: 0 }}

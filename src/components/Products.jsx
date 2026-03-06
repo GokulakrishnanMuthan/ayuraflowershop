@@ -1,6 +1,14 @@
 import React from 'react';
 import './Products.css';
 import { FaWhatsapp } from 'react-icons/fa';
+import Bokeh from './Bokeh';
+
+import jasmineImg from '../assets/products/jasmine.jpg';
+import bulkRosesImg from '../assets/products/BulkRoses.jpg';
+import marigoldImg from '../assets/products/MarigoldLots.jpg';
+import garlandsImg from '../assets/products/CustomGarlands.jpg';
+import eventDecorImg from '../assets/products/Event Decorations.avif';
+import funeralImg from '../assets/products/FuneralArrangements.jpg';
 
 const Products = () => {
     const products = [
@@ -8,48 +16,49 @@ const Products = () => {
             id: 1,
             name: 'Fresh Jasmine',
             description: 'Handpicked premium jasmine buds and full blooms for temples and weddings.',
-            image: 'https://images.unsplash.com/photo-1629858509015-fe70ef5633bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+            image: jasmineImg,
         },
         {
             id: 2,
             name: 'Bulk Roses',
             description: 'Vibrant roses available in multiple colors for events and decoration.',
-            image: 'https://images.unsplash.com/photo-1549444747-d5d83660afdc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+            image: bulkRosesImg,
         },
         {
             id: 3,
             name: 'Marigold Lots',
             description: 'Bright orange and yellow marigolds, perfect for festive decorations.',
-            image: 'https://images.unsplash.com/photo-1601314167099-232775b3d6fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+            image: marigoldImg,
         },
         {
             id: 4,
             name: 'Custom Garlands',
             description: 'Intricately woven traditional garlands for VIP welcomes and weddings.',
-            image: 'https://images.unsplash.com/photo-1634502597793-1b942baebd57?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+            image: garlandsImg,
         },
         {
             id: 5,
             name: 'Event Decorations',
             description: 'Complete floral setups for mandaps, stages, and corporate events.',
-            image: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+            image: eventDecorImg,
         },
         {
             id: 6,
             name: 'Funeral Arrangements',
             description: 'Respectful and elegant floral tributes for memorial services.',
-            image: 'https://images.unsplash.com/photo-1546255146-59b40c6c7ac0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+            image: funeralImg,
         }
     ];
 
     const handleOrder = (productName) => {
-        const message = encodeURIComponent(`Hi Ayura Flower Shop, I would like to inquire about bulk ordering ${productName}.`);
-        window.open(`https://wa.me/919876543210?text=${message}`, '_blank');
+        const message = encodeURIComponent(`Hi Ayura Floral Export, I would like to inquire about bulk ordering ${productName}.`);
+        window.open(`https://wa.me/919994048950?text=${message}`, '_blank');
     };
 
     return (
         <section id="products" className="products">
-            <div className="container">
+            <Bokeh />
+            <div className="container products-container">
                 <div className="text-center fade-in">
                     <h2 className="section-title">Our Capabilities</h2>
                     <p className="section-subtitle">Wholesale Offerings</p>

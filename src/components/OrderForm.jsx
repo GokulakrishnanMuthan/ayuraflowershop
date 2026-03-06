@@ -22,7 +22,7 @@ const OrderForm = () => {
         const waMessage = `*New Bulk Order Inquiry*%0A%0A*Name:* ${formData.name}%0A*Phone:* ${formData.phone}%0A*Flower Type:* ${formData.flowerType}%0A*Quantity:* ${formData.quantity}%0A*Delivery Date:* ${formData.date}%0A*Message:* ${formData.message}`;
 
         // Redirect to WhatsApp
-        window.open(`https://wa.me/919876543210?text=${waMessage}`, '_blank');
+        window.open(`https://wa.me/919994048950?text=${waMessage}`, '_blank');
     };
 
     return (
@@ -72,6 +72,7 @@ const OrderForm = () => {
                                 >
                                     <option value="" disabled>Select Flower Type</option>
                                     <option value="Jasmine">Jasmine (Full / Buds)</option>
+                                    <option value="FlowerBouquet">Flower Bouquet</option>
                                     <option value="Roses">Roses (Bulk Colors)</option>
                                     <option value="Marigolds">Marigolds</option>
                                     <option value="Garlands">Custom Garlands</option>

@@ -1,6 +1,6 @@
 import React from 'react';
 import './WhyChooseUs.css';
-import { FaLeaf, FaTags, FaPalette, FaHistory } from 'react-icons/fa';
+import { FaLeaf, FaTags, FaPalette, FaHistory, FaTruck } from 'react-icons/fa';
 
 const WhyChooseUs = () => {
     const reasons = [
@@ -23,6 +23,11 @@ const WhyChooseUs = () => {
             icon: <FaHistory />,
             title: 'On-Time Guaranteed',
             desc: 'Punctual delivery for time-sensitive occasions.'
+        },
+        {
+            icon: <FaTruck />,
+            title: 'Door Step Delivery',
+            desc: 'Direct delivery to your doorstep for maximum convenience.'
         }
     ];
 

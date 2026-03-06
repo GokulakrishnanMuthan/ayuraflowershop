@@ -32,6 +32,9 @@
     background-color: var(--bg-soft);
     border-radius: var(--border-radius-md);
     transition: var(--transition);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    /* Added prominent shadow */
+    cursor: pointer;
 }
 
 .wcu-item:hover {

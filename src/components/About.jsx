@@ -18,6 +18,11 @@ const About = () => {
             icon: <FaBoxOpen />,
             title: 'Bulk Orders Accepted',
             description: 'Capacity to handle massive orders for weddings, temples, and corporate events.'
+        },
+        {
+            icon: <FaTruck />,
+            title: 'Door Step Delivery',
+            description: 'Convenient and reliable door step delivery directly to your venue or business.'
         }
     ];
 
@@ -25,10 +30,10 @@ const About = () => {
         <section id="about" className="about bg-soft">
             <div className="container">
                 <div className="about-header text-center fade-in">
-                    <h2 className="section-title">About Ayura Flower Shop</h2>
+                    <h2 className="section-title">About Ayura Floral Export</h2>
                     <p className="section-subtitle">Premium Wholesale Florist</p>
                     <p className="about-description">
-                        Ayura Flower Shop is a leading wholesale supplier dedicated to providing the freshest, highest quality blooms.
+                        Ayura Floral Export is a leading wholesale supplier dedicated to providing the freshest, highest quality blooms.
                         From sacred temple garlands to elegant wedding decorations, we source directly from premium farms to ensure vibrant colors, lasting fragrance, and unmatched reliability. We are a business-focused partner you can trust.
                     </p>
                 </div>

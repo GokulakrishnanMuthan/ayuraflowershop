@@ -32,7 +32,7 @@ const Header = () => {
         <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
             <div className="container header-container">
                 <a href="#home" className="logo">
-                    AYURA <span>Flower Shop</span>
+                    AYURA <span>Floral Export</span>
                 </a>
 
                 {/* Desktop Nav */}
@@ -50,7 +50,7 @@ const Header = () => {
 
                 <div className="header-actions">
                     <a
-                        href="https://wa.me/919876543210" // Replace with actual number
+                        href="https://wa.me/919994048950"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn btn-secondary whatsapp-btn"
