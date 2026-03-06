@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ayuraflowershop.netlify.app/sitemap.xml

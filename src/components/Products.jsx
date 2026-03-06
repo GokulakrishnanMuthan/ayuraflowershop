@@ -16,36 +16,42 @@ const Products = () => {
             id: 1,
             name: 'Fresh Jasmine',
             description: 'Handpicked premium jasmine buds and full blooms for temples and weddings.',
+            altText: 'Pile of fresh, fragrant white jasmine flower buds for garlands and temple offerings',
             image: jasmineImg,
         },
         {
             id: 2,
             name: 'Bulk Roses',
             description: 'Vibrant roses available in multiple colors for events and decoration.',
+            altText: 'Wholesale bundle of fresh red roses used for event decorations and bouquets',
             image: bulkRosesImg,
         },
         {
             id: 3,
             name: 'Marigold Lots',
             description: 'Bright orange and yellow marigolds, perfect for festive decorations.',
+            altText: 'Large sacks of bright orange and yellow marigold flowers for festive occasions',
             image: marigoldImg,
         },
         {
             id: 4,
             name: 'Custom Garlands',
             description: 'Intricately woven traditional garlands for VIP welcomes and weddings.',
+            altText: 'Thick, intricately woven traditional Indian wedding garland made of colorful fresh flowers',
             image: garlandsImg,
         },
         {
             id: 5,
             name: 'Event Decorations',
             description: 'Complete floral setups for mandaps, stages, and corporate events.',
+            altText: 'Elaborate mandap and stage floral decoration setup for a grand wedding event',
             image: eventDecorImg,
         },
         {
             id: 6,
             name: 'Funeral Arrangements',
             description: 'Respectful and elegant floral tributes for memorial services.',
+            altText: 'Elegant white floral wreath and tribute arrangement for a memorial service',
             image: funeralImg,
         }
     ];
@@ -72,7 +78,7 @@ const Products = () => {
                             style={{ animationDelay: `${index * 0.1}s` }}
                         >
                             <div className="product-image-wrapper">
-                                <img src={product.image} alt={product.name} className="product-image" loading="lazy" />
+                                <img src={product.image} alt={product.altText} className="product-image" loading="lazy" />
                             </div>
                             <div className="product-content">
                                 <h3 className="product-name">{product.name}</h3>
