@@ -32,7 +32,7 @@ const Header = () => {
         <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
             <div className="container header-container">
                 <a href="#home" className="logo">
-                    AYURA <span>Floral Export</span>
+                    AYURA <span>Floral Exports</span>
                 </a>
 
                 {/* Desktop Nav */}

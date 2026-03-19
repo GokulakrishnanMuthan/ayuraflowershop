@@ -47,7 +47,7 @@ const WhyChooseUs = () => {
                     <div className="wcu-grid">
                         {reasons.map((reason, index) => (
                             <div
-                                className="wcu-item fade-in"
+                                className="wcu-item reveal-right hover-lift"
                                 key={index}
                                 style={{ animationDelay: `${index * 0.15}s` }}
                             >

@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="container">
                 <div className="footer-content">
                     <div className="footer-brand">
-                        <h2 className="footer-logo">AYURA <span>Floral Export</span></h2>
+                        <h2 className="footer-logo">AYURA <span>Floral Exports</span></h2>
                         <p className="footer-desc">
                             Your trusted partner for wholesale, bulk, and event floral supplies. Delivering freshness and elegance daily.
                         </p>
@@ -41,7 +41,7 @@ const Footer = () => {
                 </div>
 
                 <div className="footer-bottom">
-                    <p>&copy; {new Date().getFullYear()} Ayura Floral Export. All rights reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} Ayura Floral Exports. All rights reserved.</p>
                     <p className="credit">Designed for Wholesale Excellence.</p>
                 </div>
             </div>

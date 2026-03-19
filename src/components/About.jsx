@@ -30,10 +30,10 @@ const About = () => {
         <section id="about" className="about bg-soft">
             <div className="container">
                 <div className="about-header text-center fade-in">
-                    <h2 className="section-title">About Ayura Floral Export</h2>
+                    <h2 className="section-title">About Ayura Floral Exports</h2>
                     <p className="section-subtitle">Premium Wholesale Florist</p>
                     <p className="about-description">
-                        Ayura Floral Export is a leading wholesale supplier dedicated to providing the freshest, highest quality blooms.
+                        Ayura Floral Exports is a leading wholesale supplier dedicated to providing the freshest, highest quality blooms.
                         From sacred temple garlands to elegant wedding decorations, we source directly from premium farms to ensure vibrant colors, lasting fragrance, and unmatched reliability. We are a business-focused partner you can trust.
                     </p>
                 </div>
@@ -41,9 +41,9 @@ const About = () => {
                 <div className="features-grid mt-5">
                     {features.map((feature, index) => (
                         <div
-                            className="feature-card fade-in"
+                            className="feature-card zoom-in hover-lift"
                             key={index}
-                            style={{ animationDelay: `${index * 0.2}s` }}
+                            style={{ animationDelay: `${index * 0.15}s` }}
                         >
                             <div className="feature-icon">{feature.icon}</div>
                             <h3 className="feature-title">{feature.title}</h3>

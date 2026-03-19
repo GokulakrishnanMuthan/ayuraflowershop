@@ -29,7 +29,7 @@ const Gallery = () => {
                 <div className="gallery-grid">
                     {galleryImages.map((img, index) => (
                         <div
-                            className="gallery-item fade-in"
+                            className="gallery-item zoom-in"
                             key={img.id}
                             style={{ animationDelay: `${index * 0.1}s` }}
                         >

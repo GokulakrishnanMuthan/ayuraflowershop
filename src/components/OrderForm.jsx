@@ -28,9 +28,14 @@ const OrderForm = () => {
     return (
         <section id="order" className="order bg-soft">
             <div className="container">
-                <div className="order-wrapper fade-in">
+                <div className="text-center fade-in">
+                    <h2 className="section-title">Bulk Orders</h2>
+                    <p className="section-subtitle">Wholesale Inquiries</p>
+                </div>
+
+                <div className="order-wrapper reveal-right mt-5">
                     <div className="order-info">
-                        <h2 className="section-title" style={{ textAlign: 'left' }}>Place a Bulk Order</h2>
+                        <h3 className="section-title" style={{ textAlign: 'left', fontSize: '1.8rem', marginBottom: '15px' }}>Get a Custom Quote</h3>
                         <p className="order-desc">
                             Need fresh flowers in large quantities? Whether it's for a daily temple supply, a grand wedding, or a special event, Ayura ensures top quality and timely delivery.
                             Fill out the form to instantly send your requirements to our wholesale team via WhatsApp.

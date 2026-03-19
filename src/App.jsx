@@ -31,13 +31,13 @@ function App() {
 
     const observer = new IntersectionObserver(observerCallback, observerOptions);
 
-    // Select all elements with fade-in class
-    const fadeElements = document.querySelectorAll('.fade-in');
-    fadeElements.forEach(el => observer.observe(el));
+    // Select all elements with animation classes
+    const revealElements = document.querySelectorAll('.fade-in, [class*="reveal-"], .zoom-in');
+    revealElements.forEach(el => observer.observe(el));
 
     // Cleanup
     return () => {
-      fadeElements.forEach(el => observer.unobserve(el));
+      revealElements.forEach(el => observer.unobserve(el));
     };
   }, []);
 

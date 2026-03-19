@@ -53,17 +53,6 @@
     color: var(--primary);
 }
 
-/* Updated styling: Set background for non-scrolled header text to white so it's visible on dark hero */
-.header:not(.scrolled) .nav-link,
-.header:not(.scrolled) .logo {
-    color: white;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    /* added for visibility if image is light */
-}
-
-.header:not(.scrolled) .logo span {
-    color: var(--primary-light);
-}
 
 .header-actions {
     display: flex;
@@ -89,9 +78,6 @@
     color: var(--text-dark);
 }
 
-.header:not(.scrolled) .mobile-menu-toggle {
-    color: white;
-}
 
 .mobile-nav {
     position: absolute;

@@ -57,7 +57,7 @@ const Products = () => {
     ];
 
     const handleOrder = (productName) => {
-        const message = encodeURIComponent(`Hi Ayura Floral Export, I would like to inquire about bulk ordering ${productName}.`);
+        const message = encodeURIComponent(`Hi Ayura Floral Exports, I would like to inquire about bulk ordering ${productName}.`);
         window.open(`https://wa.me/919994048950?text=${message}`, '_blank');
     };
 
@@ -73,7 +73,7 @@ const Products = () => {
                 <div className="products-grid mt-5">
                     {products.map((product, index) => (
                         <div
-                            className="product-card fade-in"
+                            className="product-card fade-in hover-lift"
                             key={product.id}
                             style={{ animationDelay: `${index * 0.1}s` }}
                         >

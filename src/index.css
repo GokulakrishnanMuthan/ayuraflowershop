@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700;800&display=swap');
+
 
 :root {
   /* Colors */
@@ -161,10 +163,40 @@ section {
 }
 
 /* Base Animations (Intersection Observer Targets) */
-.fade-in {
+[class*='reveal-'], .fade-in, .zoom-in {
   opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: transform, opacity;
+  transition: all 0.9s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.fade-in {
+  transform: translateY(40px);
+}
+
+.reveal-left {
+  transform: translateX(-50px);
+}
+
+.reveal-right {
+  transform: translateX(50px);
+}
+
+.zoom-in {
+  transform: scale(0.92);
+}
+
+.visible {
+  opacity: 1 !important;
+  transform: translate(0, 0) scale(1) !important;
+}
+
+/* Optional: Subtle scale hover for cards to make them feel more premium */
+.hover-lift {
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.hover-lift:hover {
+  transform: translateY(-8px) scale(1.02);
 }
 
 .fade-in.visible {
